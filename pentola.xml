@@ -2,9 +2,9 @@
 <!DOCTYPE entity PUBLIC "-//UC Berkeley//DTD MoML 1//EN"
     "http://ptolemy.eecs.berkeley.edu/xml/dtd/MoML_1.dtd">
 <entity name="pentola" class="ptolemy.actor.TypedCompositeActor">
-    <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="11.1.devel">
+    <property name="_createdBy" class="ptolemy.kernel.attributes.VersionAttribute" value="11.0.1">
     </property>
-    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={2106, -32, 1509, 1096}, maximized=false}">
+    <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-9, -9, 1938, 1048}, maximized=false}">
     </property>
     <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1708, 918]">
     </property>
@@ -28,7 +28,7 @@
         <property name="_location" class="ptolemy.kernel.util.Location" value="{465, 40}">
         </property>
     </property>
-    <property name="Volume" class="ptolemy.data.expr.Parameter" value="20">
+    <property name="Volume" class="ptolemy.data.expr.Parameter" value="12">
         <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
         </property>
         <property name="_icon" class="ptolemy.vergil.icon.ValueIcon">
@@ -50,7 +50,7 @@
     <entity name="Temperatura" class="ptolemy.actor.TypedCompositeActor">
         <property name="_location" class="ptolemy.kernel.util.Location" value="[295.0, 170.0]">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={2386, 142, 1266, 680}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={654, 142, 1203, 632}, maximized=false}">
         </property>
         <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[973, 502]">
         </property>
@@ -119,7 +119,7 @@
             </property>
         </entity>
         <entity name="Integrator" class="ptolemy.domains.continuous.lib.Integrator">
-            <property name="initialState" class="ptolemy.actor.parameters.PortParameter" value="370.15">
+            <property name="initialState" class="ptolemy.actor.parameters.PortParameter" value="373.05">
             </property>
             <property name="_location" class="ptolemy.kernel.util.Location" value="{585.0, 320.0}">
             </property>
@@ -196,7 +196,7 @@
     <entity name="Mass" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={298, -22, 640, 907}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={298, 0, 582, 862}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[564, 789]">
         </property>
@@ -207,15 +207,15 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="7577.5"/>
-<yRange min="0.0" max="0.0"/>
+<xRange min="0.0" max="11468.7"/>
+<yRange min="0.0" max="0.10226918972146316"/>
 </plot>?>
         </configure>
     </entity>
     <entity name="CompositeActor" class="ptolemy.actor.TypedCompositeActor">
         <property name="_location" class="ptolemy.kernel.util.Location" value="[310.0, 365.0]">
         </property>
-        <property name="a" class="ptolemy.data.expr.Parameter" value="0.00000000004">
+        <property name="a" class="ptolemy.data.expr.Parameter" value="0.0004">
             <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
             </property>
             <property name="_icon" class="ptolemy.vergil.icon.ValueIcon">
@@ -301,7 +301,7 @@
         </property>
         <property name="DocAttribute" class="ptolemy.vergil.basic.DocAttribute">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={1700, 95, 2001, 1096}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={0, 0, 1938, 1048}, maximized=false}">
         </property>
         <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1708, 918]">
         </property>
@@ -533,7 +533,7 @@
     <entity name="Temp" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-32, 60, 609, 592}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={0, 60, 551, 547}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[533, 474]">
         </property>
@@ -544,13 +544,13 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="14220.8"/>
-<yRange min="370.15" max="374.3044048491323"/>
+<xRange min="0.0" max="9011.1"/>
+<yRange min="373.05" max="375.57602032365486"/>
 </plot>?>
         </configure>
     </entity>
     <entity name="Expression" class="ptolemy.actor.lib.Expression">
-        <property name="expression" class="ptolemy.kernel.util.StringAttribute" value="((m/0.018) * 8.20E-5 * T)/Volume">
+        <property name="expression" class="ptolemy.kernel.util.StringAttribute" value="1 + ((m/0.018) * 8.20E-3 * T)/Volume">
         </property>
         <property name="_icon" class="ptolemy.vergil.icon.BoxedValueIcon">
             <property name="attributeName" class="ptolemy.kernel.util.StringAttribute" value="expression">
@@ -576,7 +576,7 @@
     <entity name="P" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={1185, 126, 640, 907}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={1185, 126, 582, 862}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[564, 789]">
         </property>
@@ -587,15 +587,15 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="13107.1"/>
-<yRange min="0.0" max="0.0"/>
+<xRange min="0.0" max="9011.1"/>
+<yRange min="1.0" max="2.4491253351854763"/>
 </plot>?>
         </configure>
     </entity>
     <entity name="Valve" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={827, 103, 640, 862}, maximized=false}">
+        <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={827, 103, 582, 817}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[564, 744]">
         </property>
@@ -606,7 +606,7 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="13107.1"/>
+<xRange min="0.0" max="9011.1"/>
 <yRange min="0.0" max="1.0"/>
 </plot>?>
         </configure>
@@ -671,13 +671,13 @@ Then delete this annotation.</text>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="{85.0, 165.0}">
                 </property>
             </property>
-            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={2118, 222, 993, 679}, maximized=false}">
+            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={526, 477, 930, 632}, maximized=false}">
             </property>
-            <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[700, 500]">
+            <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[700, 502]">
             </property>
             <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="1.0">
             </property>
-            <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{352.0, 254.359375}">
+            <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{352.0, 255.359375}">
             </property>
             <port name="P" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="input"/>
@@ -715,7 +715,7 @@ Then delete this annotation.</text>
             <relation name="relation" class="ptolemy.domains.modal.kernel.Transition">
                 <property name="annotation" class="ptolemy.data.expr.StringParameter" value="open valve">
                 </property>
-                <property name="guardExpression" class="ptolemy.kernel.util.StringAttribute" value="P &gt;= 0">
+                <property name="guardExpression" class="ptolemy.kernel.util.StringAttribute" value="P &gt;= P_Max">
                 </property>
                 <property name="outputActions" class="ptolemy.domains.modal.kernel.OutputActionsAttribute" value="valve = 1">
                 </property>
