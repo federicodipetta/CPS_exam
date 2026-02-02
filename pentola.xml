@@ -483,8 +483,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="294.4"/>
-<yRange min="0.0" max="0.10888670551953433"/>
+<xRange min="0.0" max="370.4"/>
+<yRange min="0.0" max="0.09135935641096352"/>
 </plot>?>
         </configure>
     </entity>
@@ -824,8 +824,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="294.4"/>
-<yRange min="373.05" max="375.7625436583955"/>
+<xRange min="0.0" max="454.4"/>
+<yRange min="373.05" max="377.2360342962185"/>
 </plot>?>
         </configure>
     </entity>
@@ -869,8 +869,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="294.4"/>
-<yRange min="1.0" max="2.545123800437282"/>
+<xRange min="0.0" max="454.4"/>
+<yRange min="1.0" max="2.3967691893727383"/>
 </plot>?>
         </configure>
     </entity>
@@ -888,7 +888,7 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="294.4"/>
+<xRange min="0.0" max="454.4"/>
 <yRange min="0.0" max="1.0"/>
 </plot>?>
         </configure>
@@ -907,7 +907,7 @@
             <property name="_showName" class="ptolemy.data.expr.SingletonParameter" value="true">
             </property>
         </port>
-        <port name="valve" class="ptolemy.domains.modal.modal.ModalPort">
+        <port name="p_out" class="ptolemy.domains.modal.modal.ModalPort">
             <property name="output"/>
             <property name="_showName" class="ptolemy.data.expr.SingletonParameter" value="true">
             </property>
@@ -916,32 +916,12 @@
             <property name="input"/>
         </port>
         <entity name="_Controller" class="ptolemy.domains.modal.modal.ModalController">
-            <property name="annotation" class="ptolemy.kernel.util.Attribute">
-                <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
-                </property>
-                <property name="_iconDescription" class="ptolemy.kernel.util.SingletonConfigurableAttribute">
-                    <configure><svg><text x="20" y="20" style="font-size:14; font-family:SansSerif; fill:blue">Create a state machine here (and ports, if needed) and
-create refinements for the states.  Create transitions
-by holding the (Mac: command key, Windows: control key)
-and dragging from one state to another.  
-Right click to configure the properties 
-of this model, including setting the final state(s).
-Then delete this annotation.</text>
-    </svg></configure>
-                </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="120.0, 5.0">
-                </property>
-                <property name="_controllerFactory" class="ptolemy.vergil.basic.NodeControllerFactory">
-                </property>
-                <property name="_editorFactory" class="ptolemy.vergil.toolbox.AnnotationEditorFactory">
-                </property>
-            </property>
             <property name="_library" class="ptolemy.moml.LibraryAttribute">
                 <configure>
       <entity name="state library" class="ptolemy.kernel.CompositeEntity"><input source="ptolemy/configs/basicUtilities.xml"></input><entity name="state" class="ptolemy.domains.modal.kernel.State"><property name="_centerName" class="ptolemy.kernel.util.Attribute"></property><property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory"></property></entity></entity>
     </configure>
             </property>
-            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-649, -339, 1942, 1102}, maximized=false}">
+            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-649, 0, 1942, 1102}, maximized=false}">
             </property>
             <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[2988, 1628]">
             </property>
@@ -953,22 +933,22 @@ Then delete this annotation.</text>
                 <property name="input"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[25.0, 140.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[50.0, 220.0]">
                 </property>
             </port>
-            <port name="valve" class="ptolemy.domains.modal.modal.RefinementPort">
+            <port name="p_out" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="input"/>
                 <property name="output"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[510.0, 230.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[345.0, 260.0]">
                 </property>
             </port>
             <port name="fault" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="input"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="{20.0, 200.0}">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[50.0, 290.0]">
                 </property>
             </port>
             <entity name="Normal" class="ptolemy.domains.modal.kernel.State">
@@ -980,7 +960,7 @@ Then delete this annotation.</text>
                 </property>
                 <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[135.0, 260.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[130.0, 260.0]">
                 </property>
             </entity>
             <entity name="Faulty" class="ptolemy.domains.modal.kernel.State">
@@ -1026,7 +1006,7 @@ Then delete this annotation.</text>
             <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{347.0, 359.40625}">
             </property>
             <property name="Continuous Director" class="ptolemy.domains.continuous.kernel.ContinuousDirector">
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[105.0, 185.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[125.0, 185.0]">
                 </property>
             </property>
             <port name="P" class="ptolemy.domains.modal.modal.RefinementPort">
@@ -1036,24 +1016,24 @@ Then delete this annotation.</text>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[85.0, 245.0]">
                 </property>
             </port>
-            <port name="valve" class="ptolemy.domains.modal.modal.RefinementPort">
+            <port name="p_out" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="output"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[485.0, 245.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[245.0, 245.0]">
                 </property>
             </port>
             <port name="fault" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="input"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[55.0, 330.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[85.0, 290.0]">
                 </property>
             </port>
             <relation name="relation" class="ptolemy.actor.TypedIORelation">
             </relation>
             <link port="P" relation="relation"/>
-            <link port="valve" relation="relation"/>
+            <link port="p_out" relation="relation"/>
         </entity>
         <entity name="Faulty" class="ptolemy.domains.modal.modal.Refinement">
             <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-9, -9, 1938, 1048}, maximized=true}">
@@ -1065,7 +1045,7 @@ Then delete this annotation.</text>
             <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{447.5, 383.40625}">
             </property>
             <property name="Continuous Director" class="ptolemy.domains.continuous.kernel.ContinuousDirector">
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[150.0, 155.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[190.0, 185.0]">
                 </property>
             </property>
             <port name="P" class="ptolemy.domains.modal.modal.RefinementPort">
@@ -1075,18 +1055,18 @@ Then delete this annotation.</text>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[150.0, 235.0]">
                 </property>
             </port>
-            <port name="valve" class="ptolemy.domains.modal.modal.RefinementPort">
+            <port name="p_out" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="output"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[510.0, 230.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[425.0, 245.0]">
                 </property>
             </port>
             <port name="fault" class="ptolemy.domains.modal.modal.RefinementPort">
                 <property name="input"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[65.0, 220.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[150.0, 270.0]">
                 </property>
             </port>
             <entity name="Const" class="ptolemy.actor.lib.Const">
@@ -1099,11 +1079,11 @@ Then delete this annotation.</text>
                     <property name="displayWidth" class="ptolemy.data.expr.Parameter" value="60">
                     </property>
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[255.0, 315.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[270.0, 270.0]">
                 </property>
             </entity>
             <entity name="AddSubtract" class="ptolemy.actor.lib.AddSubtract">
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[320.0, 245.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[360.0, 245.0]">
                 </property>
             </entity>
             <relation name="relation" class="ptolemy.actor.TypedIORelation">
@@ -1117,7 +1097,7 @@ Then delete this annotation.</text>
             <relation name="relation3" class="ptolemy.actor.TypedIORelation">
             </relation>
             <link port="P" relation="relation4"/>
-            <link port="valve" relation="relation"/>
+            <link port="p_out" relation="relation"/>
             <link port="Const.output" relation="relation3"/>
             <link port="Const.trigger" relation="relation4"/>
             <link port="AddSubtract.plus" relation="relation4"/>
@@ -1128,7 +1108,7 @@ Then delete this annotation.</text>
             <property name="width" class="ptolemy.data.expr.Parameter" value="Auto">
             </property>
         </relation>
-        <relation name="valveRelation" class="ptolemy.actor.TypedIORelation">
+        <relation name="p_outRelation" class="ptolemy.actor.TypedIORelation">
             <property name="width" class="ptolemy.data.expr.Parameter" value="Auto">
             </property>
         </relation>
@@ -1137,16 +1117,16 @@ Then delete this annotation.</text>
             </property>
         </relation>
         <link port="P" relation="PRelation"/>
-        <link port="valve" relation="valveRelation"/>
+        <link port="p_out" relation="p_outRelation"/>
         <link port="fault" relation="faultRelation"/>
         <link port="_Controller.P" relation="PRelation"/>
-        <link port="_Controller.valve" relation="valveRelation"/>
+        <link port="_Controller.p_out" relation="p_outRelation"/>
         <link port="_Controller.fault" relation="faultRelation"/>
         <link port="Normal.P" relation="PRelation"/>
-        <link port="Normal.valve" relation="valveRelation"/>
+        <link port="Normal.p_out" relation="p_outRelation"/>
         <link port="Normal.fault" relation="faultRelation"/>
         <link port="Faulty.P" relation="PRelation"/>
-        <link port="Faulty.valve" relation="valveRelation"/>
+        <link port="Faulty.p_out" relation="p_outRelation"/>
         <link port="Faulty.fault" relation="faultRelation"/>
     </entity>
     <entity name="DiscreteClock" class="ptolemy.domains.continuous.lib.DiscreteClock">
@@ -1230,21 +1210,7 @@ Then delete this annotation.</text>
             </property>
             <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{168.7077198492458, 218.7147173366835}">
             </property>
-            <property name="annotation" class="ptolemy.kernel.util.Attribute">
-                <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
-                </property>
-                <property name="_iconDescription" class="ptolemy.kernel.util.SingletonConfigurableAttribute">
-                    <configure><svg><text x="20" y="20" style="font-size:14; font-family:SansSerif; fill:blue">OK
-</text></svg></configure>
-                </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="120.0, 5.0">
-                </property>
-                <property name="_controllerFactory" class="ptolemy.vergil.basic.NodeControllerFactory">
-                </property>
-                <property name="_editorFactory" class="ptolemy.vergil.toolbox.AnnotationEditorFactory">
-                </property>
-            </property>
-            <property name="last_p" class="ptolemy.data.expr.Parameter" value="1.986758595602">
+            <property name="last_p" class="ptolemy.data.expr.Parameter" value="1.0">
                 <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
                 </property>
                 <property name="_icon" class="ptolemy.vergil.icon.ValueIcon">
@@ -1271,7 +1237,7 @@ Then delete this annotation.</text>
                 <property name="input"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[-115.0, 135.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[-5.0, 200.0]">
                 </property>
             </port>
             <port name="valve" class="ptolemy.domains.modal.modal.RefinementPort">
@@ -1279,7 +1245,7 @@ Then delete this annotation.</text>
                 <property name="output"/>
                 <property name="defaultValue" class="ptolemy.data.expr.Parameter" value="">
                 </property>
-                <property name="_location" class="ptolemy.kernel.util.Location" value="[405.0, 180.0]">
+                <property name="_location" class="ptolemy.kernel.util.Location" value="[310.0, 190.0]">
                 </property>
             </port>
             <entity name="normal" class="ptolemy.domains.modal.kernel.State">
@@ -1385,13 +1351,13 @@ Then delete this annotation.</text>
                 </property>
                 <port name="P" class="ptolemy.domains.modal.modal.RefinementPort">
                     <property name="input"/>
-                    <property name="_location" class="ptolemy.kernel.util.Location" value="{20.0, 200.0}">
+                    <property name="_location" class="ptolemy.kernel.util.Location" value="[75.0, 415.0]">
                     </property>
                 </port>
                 <port name="valve" class="ptolemy.domains.modal.modal.RefinementPort">
                     <property name="input"/>
                     <property name="output"/>
-                    <property name="_location" class="ptolemy.kernel.util.Location" value="[510.0, 245.0]">
+                    <property name="_location" class="ptolemy.kernel.util.Location" value="[415.0, 415.0]">
                     </property>
                 </port>
                 <entity name="valve_close" class="ptolemy.domains.modal.kernel.State">
@@ -1529,8 +1495,8 @@ Then delete this annotation.</text>
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="294.4"/>
-<yRange min="1.0" max="2.545123800437282"/>
+<xRange min="0.0" max="454.4"/>
+<yRange min="1.0" max="2.3967691893727383"/>
 </plot>?>
         </configure>
     </entity>
@@ -1583,7 +1549,7 @@ Then delete this annotation.</text>
     <link port="PeriodicSampler.input" relation="relation4"/>
     <link port="PeriodicSampler.output" relation="relation"/>
     <link port="Sensor.P" relation="relation"/>
-    <link port="Sensor.valve" relation="relation9"/>
+    <link port="Sensor.p_out" relation="relation9"/>
     <link port="Sensor.fault" relation="relation7"/>
     <link port="DiscreteClock.output" relation="relation7"/>
     <link port="ValveFSM.P" relation="relation9"/>
