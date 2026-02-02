@@ -483,8 +483,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="370.4"/>
-<yRange min="0.0" max="0.09135935641096352"/>
+<xRange min="0.0" max="294.4"/>
+<yRange min="0.0" max="0.09948407807303417"/>
 </plot>?>
         </configure>
     </entity>
@@ -824,8 +824,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="454.4"/>
-<yRange min="373.05" max="377.2360342962185"/>
+<xRange min="0.0" max="358.4"/>
+<yRange min="373.05" max="376.3503354407565"/>
 </plot>?>
         </configure>
     </entity>
@@ -856,8 +856,6 @@
     <entity name="Pressure" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="legend" class="ptolemy.kernel.util.StringAttribute">
-        </property>
         <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={817, 546, 983, 490}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[965, 417]">
@@ -869,8 +867,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="454.4"/>
-<yRange min="1.0" max="2.3967691893727383"/>
+<xRange min="0.0" max="358.4"/>
+<yRange min="1.0" max="2.8165134433819774"/>
 </plot>?>
         </configure>
     </entity>
@@ -888,7 +886,7 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="454.4"/>
+<xRange min="0.0" max="358.4"/>
 <yRange min="0.0" max="1.0"/>
 </plot>?>
         </configure>
@@ -956,21 +954,21 @@
                 </property>
                 <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
                 </property>
-                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
-                </property>
                 <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                 </property>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[130.0, 260.0]">
+                </property>
+                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                 </property>
             </entity>
             <entity name="Faulty" class="ptolemy.domains.modal.kernel.State">
                 <property name="refinementName" class="ptolemy.kernel.util.StringAttribute" value="Faulty">
                 </property>
-                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
-                </property>
                 <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                 </property>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[275.0, 260.0]">
+                </property>
+                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                 </property>
             </entity>
             <relation name="relation" class="ptolemy.domains.modal.kernel.Transition">
@@ -1202,13 +1200,13 @@
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[80.0, 120.0]">
                 </property>
             </property>
-            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-9, -9, 1938, 1048}, maximized=true}">
+            <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={-9, 16, 1938, 1048}, maximized=false}">
             </property>
             <property name="_vergilSize" class="ptolemy.actor.gui.SizeAttribute" value="[1708, 918]">
             </property>
-            <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="1.0">
+            <property name="_vergilZoomFactor" class="ptolemy.data.expr.ExpertParameter" value="1.953125">
             </property>
-            <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{168.7077198492458, 218.7147173366835}">
+            <property name="_vergilCenter" class="ptolemy.data.expr.ExpertParameter" value="{168.70771984924573, 218.7147173366835}">
             </property>
             <property name="last_p" class="ptolemy.data.expr.Parameter" value="1.0">
                 <property name="_hideName" class="ptolemy.kernel.util.SingletonAttribute">
@@ -1251,21 +1249,31 @@
             <entity name="normal" class="ptolemy.domains.modal.kernel.State">
                 <property name="refinementName" class="ptolemy.kernel.util.StringAttribute" value="state">
                 </property>
-                <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
-                </property>
-                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+                <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="false">
                 </property>
                 <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                 </property>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[40.0, 250.0]">
                 </property>
-            </entity>
-            <entity name="faulty" class="ptolemy.domains.modal.kernel.State">
                 <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                 </property>
+            </entity>
+            <entity name="faulty" class="ptolemy.domains.modal.kernel.State">
                 <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                 </property>
                 <property name="_location" class="ptolemy.kernel.util.Location" value="[210.0, 250.0]">
+                </property>
+                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
+                </property>
+            </entity>
+            <entity name="init" class="ptolemy.domains.modal.kernel.State">
+                <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
+                </property>
+                <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
+                </property>
+                <property name="_location" class="ptolemy.kernel.util.Location" value="{-125, 220}">
+                </property>
+                <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                 </property>
             </entity>
             <relation name="relation" class="ptolemy.domains.modal.kernel.Transition">
@@ -1319,12 +1327,22 @@
                     <display name="default"/>
                 </property>
             </relation>
+            <relation name="relation4" class="ptolemy.domains.modal.kernel.Transition">
+                <property name="setActions" class="ptolemy.domains.modal.kernel.CommitActionsAttribute" value="last_p = 1.0">
+                </property>
+                <property name="exitAngle" class="ptolemy.data.expr.Parameter" value="0.6283185307179586">
+                </property>
+                <property name="gamma" class="ptolemy.data.expr.Parameter" value="0.21919970579010584">
+                </property>
+            </relation>
             <link port="normal.incomingPort" relation="relation2"/>
+            <link port="normal.incomingPort" relation="relation4"/>
             <link port="normal.outgoingPort" relation="relation"/>
             <link port="faulty.incomingPort" relation="relation"/>
             <link port="faulty.incomingPort" relation="relation3"/>
             <link port="faulty.outgoingPort" relation="relation2"/>
             <link port="faulty.outgoingPort" relation="relation3"/>
+            <link port="init.outgoingPort" relation="relation4"/>
         </entity>
         <entity name="state" class="ptolemy.domains.modal.modal.ModalRefinement">
             <property name="_tableauFactory" class="ptolemy.vergil.modal.modal.ModalTableauFactory">
@@ -1363,19 +1381,19 @@
                 <entity name="valve_close" class="ptolemy.domains.modal.kernel.State">
                     <property name="isInitialState" class="ptolemy.data.expr.Parameter" value="true">
                     </property>
-                    <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
-                    </property>
                     <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                     </property>
                     <property name="_location" class="ptolemy.kernel.util.Location" value="[145.0, 350.0]">
                     </property>
-                </entity>
-                <entity name="valve_open" class="ptolemy.domains.modal.kernel.State">
                     <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                     </property>
+                </entity>
+                <entity name="valve_open" class="ptolemy.domains.modal.kernel.State">
                     <property name="_controllerFactory" class="ptolemy.vergil.modal.modal.HierarchicalStateControllerFactory">
                     </property>
                     <property name="_location" class="ptolemy.kernel.util.Location" value="[330.0, 345.0]">
+                    </property>
+                    <property name="_hideName" class="ptolemy.data.expr.SingletonParameter" value="true">
                     </property>
                 </entity>
                 <relation name="relation" class="ptolemy.domains.modal.kernel.Transition">
@@ -1482,8 +1500,6 @@
     <entity name="SensorPressure" class="ptolemy.actor.lib.gui.TimedPlotter">
         <property name="automaticRescale" class="ptolemy.data.expr.Parameter" value="true">
         </property>
-        <property name="legend" class="ptolemy.kernel.util.StringAttribute">
-        </property>
         <property name="_windowProperties" class="ptolemy.actor.gui.WindowPropertiesAttribute" value="{bounds={818, 52, 983, 490}, maximized=false}">
         </property>
         <property name="_plotSize" class="ptolemy.actor.gui.SizeAttribute" value="[965, 417]">
@@ -1495,8 +1511,8 @@
 "http://ptolemy.eecs.berkeley.edu/xml/dtd/PlotML_1.dtd">
 <plot>
 <title>TimedPlotter</title>
-<xRange min="0.0" max="454.4"/>
-<yRange min="1.0" max="2.3967691893727383"/>
+<xRange min="0.0" max="358.4"/>
+<yRange min="1.0" max="2.8165134433819774"/>
 </plot>?>
         </configure>
     </entity>
